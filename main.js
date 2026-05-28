@@ -17,6 +17,13 @@ async function loadData() {
     }
 
     videos = await response.json();
+
+    // Normalize artist names first
+    videos = videos.map((item) => ({
+      ...item,
+      artist: normalizeArtistName(item.artist || "Unknown Artist")
+    }));
+
     videos.sort(sortByNewestDate);
 
     renderArtistMap(videos);
@@ -28,10 +35,32 @@ async function loadData() {
   }
 }
 
+function normalizeArtistName(name) {
+  const raw = String(name).trim();
+
+  const aliasMap = {
+    "Twice": "TWICE",
+    "Blackpink": "BLACKPINK",
+    "Aespa": "AESPA",
+    "Le Sserafim": "LE SSERAFIM",
+    "Gfriend": "GFRIEND",
+    "Kiss Of Life": "KISS OF LIFE",
+    "Fifty Fifty": "FIFTY FIFTY",
+    "Newjeans": "NewJeans"
+  };
+
+  const normalized = raw
+    .toLowerCase()
+    .split(" ")
+    .map(word => word ? word[0].toUpperCase() + word.slice(1) : word)
+    .join(" ");
+
+  return aliasMap[normalized] || raw.toUpperCase() === raw ? raw : normalized;
+}
+
 function sortByNewestDate(a, b) {
   const dateA = a.performanceDate || "0000-00";
   const dateB = b.performanceDate || "0000-00";
-
   return dateB.localeCompare(dateA);
 }
 
@@ -97,14 +126,18 @@ function renderArtistMap(list) {
 
   artistMap.innerHTML = "";
 
-  sortedArtists.forEach(([artist, total]) => {
+  sortedArtists.forEach(([artist, total], index) => {
     const button = document.createElement("button");
-    button.className = `artist-block ${getArtistBlockSize(total)}`;
     button.type = "button";
+    button.className = `artist-bubble ${getBubbleSize(total)}`;
+
+    button.style.transform = `rotate(${getRotation(index)}deg)`;
 
     button.innerHTML = `
-      <span class="artist-block-name">${escapeHtml(artist)}</span>
-      <span class="artist-block-count">${total} video${total === 1 ? "" : "s"}</span>
+      <div class="artist-bubble-content">
+        <span class="artist-bubble-name">${escapeHtml(artist)}</span>
+        <span class="artist-bubble-count">${total} video${total === 1 ? "" : "s"}</span>
+      </div>
     `;
 
     button.addEventListener("click", () => {
@@ -120,10 +153,16 @@ function renderArtistMap(list) {
   });
 }
 
-function getArtistBlockSize(total) {
-  if (total >= 4) return "big";
+function getBubbleSize(total) {
+  if (total >= 6) return "xlarge";
+  if (total >= 4) return "large";
   if (total >= 2) return "medium";
   return "small";
+}
+
+function getRotation(index) {
+  const rotations = [-4, -2, 0, 2, 4, -3, 3];
+  return rotations[index % rotations.length];
 }
 
 function searchVideos() {
@@ -147,10 +186,9 @@ function toggleArtistMap() {
   artistMapSection.classList.toggle("hidden");
 
   const isHidden = artistMapSection.classList.contains("hidden");
-
   toggleArtistMapButton.textContent = isHidden
-    ? "Show Artist Board"
-    : "Hide Artist Board";
+    ? "Show Artist Cloud"
+    : "Hide Artist Cloud";
 }
 
 function clearArtistFilter() {
