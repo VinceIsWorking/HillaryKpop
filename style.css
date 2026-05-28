@@ -40,7 +40,7 @@ h1 {
 
 .toolbar {
   margin: 24px auto;
-  max-width: 520px;
+  max-width: 620px;
 }
 
 #searchInput {
@@ -125,21 +125,17 @@ h1 {
   font-size: 14px;
 }
 
+.watch:hover {
+  filter: brightness(1.08);
+}
+
 .empty {
   text-align: center;
   color: #aaa;
   padding: 48px 0;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  .page {
-    padding: 32px 0;
-  }
-}
+/* Artist Frequency Board */
 
 .map-button {
   display: block;
@@ -166,63 +162,119 @@ h1 {
   background: #171717;
 }
 
+.artist-map-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
 .artist-map-section h2 {
   margin: 0;
-  text-align: center;
   font-size: 24px;
 }
 
 .map-note {
-  margin: 8px 0 18px;
-  text-align: center;
+  margin: 8px 0 0;
   color: #aaa;
   font-size: 14px;
 }
 
+.clear-filter-button {
+  padding: 9px 13px;
+  border-radius: 999px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.clear-filter-button:hover {
+  border-color: #ff7ac8;
+  color: #ff7ac8;
+}
+
 .artist-map {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
 }
 
 .artist-block {
-  min-width: 110px;
-  min-height: 70px;
-  flex-grow: var(--weight);
-  flex-basis: calc(var(--weight) * 32px);
-  padding: 12px;
-  border-radius: 16px;
+  border: 1px solid #333;
+  border-radius: 18px;
+  padding: 14px;
+  background: #242424;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  min-height: 76px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.artist-block:hover {
+  transform: translateY(-3px);
+  border-color: #ff7ac8;
+  background: #2d2d2d;
+}
+
+.artist-block.big {
+  grid-column: span 2;
+  min-height: 112px;
   background: linear-gradient(135deg, #ff7ac8, #8f7cff);
   color: #111;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+
+.artist-block.medium {
+  min-height: 94px;
+  background: #30233a;
+  border-color: #5a3d67;
 }
 
 .artist-block-name {
-  font-size: 15px;
-  line-height: 1.2;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.25;
 }
 
 .artist-block-count {
+  display: block;
+  margin-top: 10px;
   font-size: 13px;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .hidden {
   display: none;
 }
 
+/* Mobile */
+
 @media (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .page {
+    padding: 32px 0;
+  }
+
   .artist-map-section {
     padding: 16px;
   }
 
-  .artist-block {
-    min-width: 95px;
-    min-height: 64px;
-    flex-basis: calc(var(--weight) * 24px);
+  .artist-map-header {
+    display: block;
+  }
+
+  .clear-filter-button {
+    margin-top: 12px;
+  }
+
+  .artist-block.big {
+    grid-column: span 1;
   }
 }
