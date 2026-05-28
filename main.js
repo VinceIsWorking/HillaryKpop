@@ -4,6 +4,7 @@ const count = document.getElementById("count");
 const toggleArtistMapButton = document.getElementById("toggleArtistMap");
 const artistMapSection = document.getElementById("artistMapSection");
 const artistMap = document.getElementById("artistMap");
+const clearArtistFilterButton = document.getElementById("clearArtistFilter");
 
 let videos = [];
 
@@ -16,7 +17,6 @@ async function loadData() {
     }
 
     videos = await response.json();
-
     videos.sort(sortByNewestDate);
 
     renderArtistMap(videos);
@@ -31,7 +31,6 @@ async function loadData() {
 function sortByNewestDate(a, b) {
   const dateA = a.performanceDate || "0000-00";
   const dateB = b.performanceDate || "0000-00";
-
   return dateB.localeCompare(dateA);
 }
 
@@ -70,7 +69,7 @@ function renderVideos(list) {
 
             <a 
               class="watch" 
-              href="${item.youtubeUrl}" 
+              href="${escapeHtml(item.youtubeUrl)}" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -91,32 +90,39 @@ function renderArtistMap(list) {
     artistCounts[artist] = (artistCounts[artist] || 0) + 1;
   });
 
-  const sortedArtists = Object.entries(artistCounts).sort((a, b) => b[1] - a[1]);
+  const sortedArtists = Object.entries(artistCounts).sort((a, b) => {
+    return b[1] - a[1] || a[0].localeCompare(b[0]);
+  });
 
-  artistMap.innerHTML = sortedArtists
-    .map(([artist, total]) => {
-      return `
-        <button 
-          class="artist-block" 
-          style="--weight: ${total};" 
-          onclick="filterByArtist('${escapeForAttribute(artist)}')"
-          title="Show ${escapeHtml(artist)} videos"
-        >
-          <span class="artist-block-name">${escapeHtml(artist)}</span>
-          <span class="artist-block-count">${total} video${total === 1 ? "" : "s"}</span>
-        </button>
-      `;
-    })
-    .join("");
+  artistMap.innerHTML = "";
+
+  sortedArtists.forEach(([artist, total]) => {
+    const button = document.createElement("button");
+    button.className = `artist-block ${getArtistBlockSize(total)}`;
+    button.type = "button";
+
+    button.innerHTML = `
+      <span class="artist-block-name">${escapeHtml(artist)}</span>
+      <span class="artist-block-count">${total} video${total === 1 ? "" : "s"}</span>
+    `;
+
+    button.addEventListener("click", () => {
+      searchInput.value = artist;
+      searchVideos();
+      window.scrollTo({
+        top: document.querySelector(".toolbar").offsetTop,
+        behavior: "smooth"
+      });
+    });
+
+    artistMap.appendChild(button);
+  });
 }
 
-function filterByArtist(artist) {
-  searchInput.value = artist;
-  searchVideos();
-  window.scrollTo({
-    top: document.querySelector(".toolbar").offsetTop,
-    behavior: "smooth"
-  });
+function getArtistBlockSize(total) {
+  if (total >= 4) return "big";
+  if (total >= 2) return "medium";
+  return "small";
 }
 
 function searchVideos() {
@@ -141,8 +147,13 @@ function toggleArtistMap() {
 
   const isHidden = artistMapSection.classList.contains("hidden");
   toggleArtistMapButton.textContent = isHidden
-    ? "Show Artist Map"
-    : "Hide Artist Map";
+    ? "Show Artist Board"
+    : "Hide Artist Board";
+}
+
+function clearArtistFilter() {
+  searchInput.value = "";
+  renderVideos(videos);
 }
 
 function escapeHtml(value) {
@@ -154,14 +165,8 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-function escapeForAttribute(value) {
-  return String(value)
-    .replaceAll("\\", "\\\\")
-    .replaceAll("'", "\\'")
-    .replaceAll('"', "&quot;");
-}
-
 searchInput.addEventListener("input", searchVideos);
 toggleArtistMapButton.addEventListener("click", toggleArtistMap);
+clearArtistFilterButton.addEventListener("click", clearArtistFilter);
 
 loadData();
