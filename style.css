@@ -5,10 +5,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background:
-    radial-gradient(circle at top left, rgba(255, 122, 200, 0.08), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(143, 124, 255, 0.09), transparent 38%),
-    #111;
+  background: #111;
   color: #fff;
 }
 
@@ -41,8 +38,6 @@ h1 {
   font-size: 16px;
 }
 
-/* Search area */
-
 .toolbar {
   margin: 24px auto;
   max-width: 620px;
@@ -61,7 +56,6 @@ h1 {
 
 #searchInput:focus {
   border-color: #ff7ac8;
-  box-shadow: 0 0 0 3px rgba(255, 122, 200, 0.12);
 }
 
 .count {
@@ -69,8 +63,6 @@ h1 {
   margin-bottom: 18px;
   text-align: center;
 }
-
-/* Video cards */
 
 .grid {
   display: grid;
@@ -83,13 +75,12 @@ h1 {
   border: 1px solid #2c2c2c;
   border-radius: 18px;
   overflow: hidden;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
   border-color: #ff7ac8;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 
 .card img {
@@ -144,7 +135,7 @@ h1 {
   padding: 48px 0;
 }
 
-/* Artist Bubble Cloud */
+/* Artist Frequency Board */
 
 .map-button {
   display: block;
@@ -165,14 +156,10 @@ h1 {
 
 .artist-map-section {
   margin: 28px 0 34px;
-  padding: 28px 22px 30px;
+  padding: 22px;
   border: 1px solid #2c2c2c;
-  border-radius: 26px;
-  background:
-    radial-gradient(circle at top left, rgba(255, 122, 200, 0.14), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(143, 124, 255, 0.16), transparent 42%),
-    #151515;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+  border-radius: 22px;
+  background: #171717;
 }
 
 .artist-map-header {
@@ -180,12 +167,12 @@ h1 {
   justify-content: space-between;
   gap: 16px;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .artist-map-section h2 {
   margin: 0;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .map-note {
@@ -210,91 +197,60 @@ h1 {
 }
 
 .artist-map {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  padding: 12px 4px 4px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
 }
 
-.artist-bubble {
-  border: none;
-  border-radius: 999px;
+.artist-block {
+  border: 1px solid #333;
+  border-radius: 18px;
+  padding: 14px;
+  background: #242424;
+  color: #fff;
+  text-align: left;
   cursor: pointer;
-  color: white;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 12px;
-  line-height: 1.2;
-  transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.06) 35%, transparent 50%),
-    linear-gradient(135deg, rgba(255, 122, 200, 0.92), rgba(143, 124, 255, 0.92));
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.28),
-    inset 0 1px 2px rgba(255, 255, 255, 0.28);
+  min-height: 76px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
-.artist-bubble:hover {
-  filter: brightness(1.05);
-  box-shadow:
-    0 14px 30px rgba(0, 0, 0, 0.35),
-    0 0 18px rgba(255, 122, 200, 0.25),
-    inset 0 1px 2px rgba(255, 255, 255, 0.3);
+.artist-block:hover {
+  transform: translateY(-3px);
+  border-color: #ff7ac8;
+  background: #2d2d2d;
 }
 
-.artist-bubble.small {
-  width: 92px;
-  height: 92px;
-  font-size: 12px;
+.artist-block.big {
+  grid-column: span 2;
+  min-height: 112px;
+  background: linear-gradient(135deg, #ff7ac8, #8f7cff);
+  color: #111;
 }
 
-.artist-bubble.medium {
-  width: 118px;
-  height: 118px;
-  font-size: 13px;
+.artist-block.medium {
+  min-height: 94px;
+  background: #30233a;
+  border-color: #5a3d67;
 }
 
-.artist-bubble.large {
-  width: 150px;
-  height: 150px;
-  font-size: 15px;
-}
-
-.artist-bubble.xlarge {
-  width: 184px;
-  height: 184px;
+.artist-block-name {
+  display: block;
   font-size: 16px;
-}
-
-.artist-bubble-content {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  align-items: center;
-  justify-content: center;
-  max-width: 90%;
-}
-
-.artist-bubble-name {
   font-weight: bold;
-  word-break: break-word;
+  line-height: 1.25;
+  word-break: keep-all;
 }
 
-.artist-bubble-count {
-  font-size: 0.9em;
-  opacity: 0.9;
+.artist-block-count {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.8;
 }
 
 .hidden {
   display: none;
 }
-
-/* Mobile */
 
 @media (max-width: 600px) {
   h1 {
@@ -306,7 +262,7 @@ h1 {
   }
 
   .artist-map-section {
-    padding: 18px 14px 20px;
+    padding: 16px;
   }
 
   .artist-map-header {
@@ -317,31 +273,7 @@ h1 {
     margin-top: 12px;
   }
 
-  .artist-map {
-    gap: 12px;
-  }
-
-  .artist-bubble.small {
-    width: 78px;
-    height: 78px;
-    font-size: 11px;
-  }
-
-  .artist-bubble.medium {
-    width: 96px;
-    height: 96px;
-    font-size: 12px;
-  }
-
-  .artist-bubble.large {
-    width: 122px;
-    height: 122px;
-    font-size: 13px;
-  }
-
-  .artist-bubble.xlarge {
-    width: 148px;
-    height: 148px;
-    font-size: 14px;
+  .artist-block.big {
+    grid-column: span 1;
   }
 }
