@@ -1,6 +1,9 @@
 const grid = document.getElementById("grid");
 const searchInput = document.getElementById("searchInput");
 const count = document.getElementById("count");
+const toggleArtistMapButton = document.getElementById("toggleArtistMap");
+const artistMapSection = document.getElementById("artistMapSection");
+const artistMap = document.getElementById("artistMap");
 
 let videos = [];
 
@@ -14,10 +17,9 @@ async function loadData() {
 
     videos = await response.json();
 
-    // Sort from newest to oldest by performanceDate.
-    // Expected format: "YYYY-MM", for example "2026-04".
     videos.sort(sortByNewestDate);
 
+    renderArtistMap(videos);
     renderVideos(videos);
   } catch (error) {
     console.error("Failed to load data:", error);
@@ -81,6 +83,42 @@ function renderVideos(list) {
     .join("");
 }
 
+function renderArtistMap(list) {
+  const artistCounts = {};
+
+  list.forEach((item) => {
+    const artist = item.artist || "Unknown Artist";
+    artistCounts[artist] = (artistCounts[artist] || 0) + 1;
+  });
+
+  const sortedArtists = Object.entries(artistCounts).sort((a, b) => b[1] - a[1]);
+
+  artistMap.innerHTML = sortedArtists
+    .map(([artist, total]) => {
+      return `
+        <button 
+          class="artist-block" 
+          style="--weight: ${total};" 
+          onclick="filterByArtist('${escapeForAttribute(artist)}')"
+          title="Show ${escapeHtml(artist)} videos"
+        >
+          <span class="artist-block-name">${escapeHtml(artist)}</span>
+          <span class="artist-block-count">${total} video${total === 1 ? "" : "s"}</span>
+        </button>
+      `;
+    })
+    .join("");
+}
+
+function filterByArtist(artist) {
+  searchInput.value = artist;
+  searchVideos();
+  window.scrollTo({
+    top: document.querySelector(".toolbar").offsetTop,
+    behavior: "smooth"
+  });
+}
+
 function searchVideos() {
   const keyword = searchInput.value.trim().toLowerCase();
 
@@ -98,6 +136,15 @@ function searchVideos() {
   renderVideos(filtered);
 }
 
+function toggleArtistMap() {
+  artistMapSection.classList.toggle("hidden");
+
+  const isHidden = artistMapSection.classList.contains("hidden");
+  toggleArtistMapButton.textContent = isHidden
+    ? "Show Artist Map"
+    : "Hide Artist Map";
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -107,6 +154,14 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function escapeForAttribute(value) {
+  return String(value)
+    .replaceAll("\\", "\\\\")
+    .replaceAll("'", "\\'")
+    .replaceAll('"', "&quot;");
+}
+
 searchInput.addEventListener("input", searchVideos);
+toggleArtistMapButton.addEventListener("click", toggleArtistMap);
 
 loadData();
