@@ -140,3 +140,89 @@ h1 {
     padding: 32px 0;
   }
 }
+
+.map-button {
+  display: block;
+  margin: 16px auto 0;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #ff7ac8;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.map-button:hover {
+  filter: brightness(1.08);
+}
+
+.artist-map-section {
+  margin: 28px 0 34px;
+  padding: 22px;
+  border: 1px solid #2c2c2c;
+  border-radius: 22px;
+  background: #171717;
+}
+
+.artist-map-section h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+.map-note {
+  margin: 8px 0 18px;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.artist-map {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.artist-block {
+  min-width: 110px;
+  min-height: 70px;
+  flex-grow: var(--weight);
+  flex-basis: calc(var(--weight) * 32px);
+  padding: 12px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ff7ac8, #8f7cff);
+  color: #111;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.artist-block-name {
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.artist-block-count {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .artist-map-section {
+    padding: 16px;
+  }
+
+  .artist-block {
+    min-width: 95px;
+    min-height: 64px;
+    flex-basis: calc(var(--weight) * 24px);
+  }
+}
