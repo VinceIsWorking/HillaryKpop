@@ -38,24 +38,47 @@ async function loadData() {
 function normalizeArtistName(name) {
   const raw = String(name).trim();
 
+  const key = raw
+    .toLowerCase()
+    .replaceAll("’", "'")
+    .replace(/\s+/g, " ");
+
   const aliasMap = {
-    "Twice": "TWICE",
-    "Blackpink": "BLACKPINK",
-    "Aespa": "AESPA",
-    "Le Sserafim": "LE SSERAFIM",
-    "Gfriend": "GFRIEND",
-    "Kiss Of Life": "KISS OF LIFE",
-    "Fifty Fifty": "FIFTY FIFTY",
-    "Newjeans": "NewJeans"
+    "twice": "TWICE",
+    "blackpink": "BLACKPINK",
+    "aespa": "AESPA",
+    "le sserafim": "LE SSERAFIM",
+    "gfriend": "GFRIEND",
+    "kiss of life": "KISS OF LIFE",
+    "fifty fifty": "FIFTY FIFTY",
+    "newjeans": "NewJeans",
+    "wjsn cosmic girls": "WJSN Cosmic Girls",
+    "wjsn": "WJSN Cosmic Girls",
+    "girls' generation": "Girls' Generation",
+    "girls’ generation": "Girls' Generation",
+    "iz*one": "IZ*ONE",
+    "produce 48": "PRODUCE 48",
+    "purple kiss": "Purple Kiss",
+    "dreamcatcher": "Dreamcatcher",
+    "illit": "ILLIT",
+    "ive": "IVE",
+    "stayc": "STAYC",
+    "mamamoo": "MAMAMOO",
+    "everglow": "EVERGLOW",
+    "misamo": "MISAMO",
+    "loona": "LOONA",
+    "soojin": "SOOJIN",
+    "meovv": "MEOVV",
+    "katseye": "KATSEYE",
+    "xg": "XG",
+    "yena": "YENA"
   };
 
-  const normalized = raw
-    .toLowerCase()
-    .split(" ")
-    .map(word => word ? word[0].toUpperCase() + word.slice(1) : word)
-    .join(" ");
+  if (aliasMap[key]) {
+    return aliasMap[key];
+  }
 
-  return aliasMap[normalized] || raw.toUpperCase() === raw ? raw : normalized;
+  return raw;
 }
 
 function sortByNewestDate(a, b) {
