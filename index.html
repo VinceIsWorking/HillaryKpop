@@ -14,33 +14,36 @@
       <p class="subtitle">A searchable index of Hillary's K-pop dance videos.</p>
     </header>
 
-<section class="toolbar">
-  <input
-    id="searchInput"
-    type="text"
-    placeholder="Search by song, artist, or location..."
-  />
+    <section class="toolbar">
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search by song, artist, or location..."
+      />
 
-  <button id="toggleArtistMap" class="map-button">
-    Show Artist Board
-  </button>
-</section>
+      <button id="toggleArtistMap" class="map-button" type="button">
+        Show Artist Board
+      </button>
+    </section>
 
-<section id="artistMapSection" class="artist-map-section hidden">
-  <div class="artist-map-header">
-    <div>
-      <h2>Artist Frequency Board</h2>
-      <p class="map-note">Bigger cards mean Hillary has more videos from that artist.</p>
-    </div>
-    <button id="clearArtistFilter" class="clear-filter-button">Clear Filter</button>
-  </div>
+    <section id="artistMapSection" class="artist-map-section hidden">
+      <div class="artist-map-header">
+        <div>
+          <h2>Artist Frequency Board</h2>
+          <p class="map-note">Bigger cards mean Hillary has more videos from that artist.</p>
+        </div>
 
-  <div id="artistMap" class="artist-map"></div>
-</section>
+        <button id="clearArtistFilter" class="clear-filter-button" type="button">
+          Clear Filter
+        </button>
+      </div>
 
-<section id="count" class="count"></section>
+      <div id="artistMap" class="artist-map"></div>
+    </section>
 
-<section id="grid" class="grid"></section>
+    <section id="count" class="count"></section>
+
+    <section id="grid" class="grid"></section>
   </main>
 
   <script src="main.js"></script>
