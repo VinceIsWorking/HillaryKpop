@@ -277,3 +277,28 @@ h1 {
     grid-column: span 1;
   }
 }
+
+.load-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0 8px;
+}
+
+.load-more-button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 999px;
+  background: #ff7ac8;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.load-more-button:hover {
+  filter: brightness(1.08);
+}
+
+.load-more-button.hidden {
+  display: none;
+}
