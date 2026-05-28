@@ -14,17 +14,27 @@
       <p class="subtitle">A searchable index of Hillary's K-pop dance videos.</p>
     </header>
 
-    <section class="toolbar">
-      <input
-        id="searchInput"
-        type="text"
-        placeholder="Search by song, artist, or location..."
-      />
-    </section>
+<section class="toolbar">
+  <input
+    id="searchInput"
+    type="text"
+    placeholder="Search by song, artist, or location..."
+  />
 
-    <section id="count" class="count"></section>
+  <button id="toggleArtistMap" class="map-button">
+    Show Artist Map
+  </button>
+</section>
 
-    <section id="grid" class="grid"></section>
+<section id="artistMapSection" class="artist-map-section hidden">
+  <h2>Artist Frequency Map</h2>
+  <p class="map-note">Bigger blocks mean more videos by that artist.</p>
+  <div id="artistMap" class="artist-map"></div>
+</section>
+
+<section id="count" class="count"></section>
+
+<section id="grid" class="grid"></section>
   </main>
 
   <script src="main.js"></script>
