@@ -5,8 +5,13 @@ const toggleArtistMapButton = document.getElementById("toggleArtistMap");
 const artistMapSection = document.getElementById("artistMapSection");
 const artistMap = document.getElementById("artistMap");
 const clearArtistFilterButton = document.getElementById("clearArtistFilter");
+const loadMoreButton = document.getElementById("loadMoreButton");
 
 let videos = [];
+let currentList = [];
+let visibleCount = 24;
+
+const PAGE_SIZE = 24;
 
 async function loadData() {
   try {
@@ -25,12 +30,16 @@ async function loadData() {
 
     videos.sort(sortByNewestDate);
 
+    currentList = videos;
+    visibleCount = PAGE_SIZE;
+
     renderArtistMap(videos);
-    renderVideos(videos);
+    renderVideos(currentList);
   } catch (error) {
     console.error("Failed to load data:", error);
     count.textContent = "";
     grid.innerHTML = `<p class="empty">Failed to load video data.</p>`;
+    loadMoreButton.classList.add("hidden");
   }
 }
 
@@ -88,14 +97,19 @@ function sortByNewestDate(a, b) {
 }
 
 function renderVideos(list) {
-  count.textContent = `${list.length} video${list.length === 1 ? "" : "s"} found`;
+  const visibleItems = list.slice(0, visibleCount);
+
+  count.textContent = `Showing ${visibleItems.length} of ${list.length} video${
+    list.length === 1 ? "" : "s"
+  }`;
 
   if (list.length === 0) {
     grid.innerHTML = `<p class="empty">No videos found.</p>`;
+    loadMoreButton.classList.add("hidden");
     return;
   }
 
-  grid.innerHTML = list
+  grid.innerHTML = visibleItems
     .map((item) => {
       const image = item.outfitImage || item.thumbnail || "";
       const artist = item.artist || "Unknown Artist";
@@ -133,6 +147,22 @@ function renderVideos(list) {
       `;
     })
     .join("");
+
+  updateLoadMoreButton(list);
+}
+
+function updateLoadMoreButton(list) {
+  if (visibleCount >= list.length) {
+    loadMoreButton.classList.add("hidden");
+  } else {
+    loadMoreButton.classList.remove("hidden");
+    loadMoreButton.textContent = `Load More (${list.length - visibleCount} left)`;
+  }
+}
+
+function loadMoreVideos() {
+  visibleCount += PAGE_SIZE;
+  renderVideos(currentList);
 }
 
 function renderArtistMap(list) {
@@ -173,7 +203,7 @@ function renderArtistMap(list) {
 }
 
 function getArtistBlockSize(total) {
-  if (total >= 4) return "big";
+  if (total >= 5) return "big";
   if (total >= 2) return "medium";
   return "small";
 }
@@ -181,7 +211,7 @@ function getArtistBlockSize(total) {
 function searchVideos() {
   const keyword = searchInput.value.trim().toLowerCase();
 
-  const filtered = videos
+  currentList = videos
     .filter((item) => {
       return (
         item.artist?.toLowerCase().includes(keyword) ||
@@ -192,7 +222,8 @@ function searchVideos() {
     })
     .sort(sortByNewestDate);
 
-  renderVideos(filtered);
+  visibleCount = PAGE_SIZE;
+  renderVideos(currentList);
 }
 
 function toggleArtistMap() {
@@ -206,7 +237,9 @@ function toggleArtistMap() {
 
 function clearArtistFilter() {
   searchInput.value = "";
-  renderVideos(videos);
+  currentList = videos;
+  visibleCount = PAGE_SIZE;
+  renderVideos(currentList);
 }
 
 function escapeHtml(value) {
@@ -221,5 +254,6 @@ function escapeHtml(value) {
 searchInput.addEventListener("input", searchVideos);
 toggleArtistMapButton.addEventListener("click", toggleArtistMap);
 clearArtistFilterButton.addEventListener("click", clearArtistFilter);
+loadMoreButton.addEventListener("click", loadMoreVideos);
 
 loadData();
