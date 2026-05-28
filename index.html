@@ -22,13 +22,19 @@
   />
 
   <button id="toggleArtistMap" class="map-button">
-    Show Artist Map
+    Show Artist Board
   </button>
 </section>
 
 <section id="artistMapSection" class="artist-map-section hidden">
-  <h2>Artist Frequency Map</h2>
-  <p class="map-note">Bigger blocks mean more videos by that artist.</p>
+  <div class="artist-map-header">
+    <div>
+      <h2>Artist Frequency Board</h2>
+      <p class="map-note">Bigger cards mean Hillary has more videos from that artist.</p>
+    </div>
+    <button id="clearArtistFilter" class="clear-filter-button">Clear Filter</button>
+  </div>
+
   <div id="artistMap" class="artist-map"></div>
 </section>
 
