@@ -18,7 +18,6 @@ async function loadData() {
 
     videos = await response.json();
 
-    // Normalize artist names first
     videos = videos.map((item) => ({
       ...item,
       artist: normalizeArtistName(item.artist || "Unknown Artist")
@@ -71,14 +70,15 @@ function normalizeArtistName(name) {
     "meovv": "MEOVV",
     "katseye": "KATSEYE",
     "xg": "XG",
-    "yena": "YENA"
+    "yena": "YENA",
+    "babymonster": "BABYMONSTER",
+    "girls' day": "GIRL'S DAY",
+    "got the beat": "GOT the beat",
+    "wjsn chocome": "WJSN CHOCOME",
+    "yeji x giselle x julie": "YEJI X GISELLE X JULIE"
   };
 
-  if (aliasMap[key]) {
-    return aliasMap[key];
-  }
-
-  return raw;
+  return aliasMap[key] || raw;
 }
 
 function sortByNewestDate(a, b) {
@@ -149,18 +149,14 @@ function renderArtistMap(list) {
 
   artistMap.innerHTML = "";
 
-  sortedArtists.forEach(([artist, total], index) => {
+  sortedArtists.forEach(([artist, total]) => {
     const button = document.createElement("button");
+    button.className = `artist-block ${getArtistBlockSize(total)}`;
     button.type = "button";
-    button.className = `artist-bubble ${getBubbleSize(total)}`;
-
-    button.style.transform = `rotate(${getRotation(index)}deg)`;
 
     button.innerHTML = `
-      <div class="artist-bubble-content">
-        <span class="artist-bubble-name">${escapeHtml(artist)}</span>
-        <span class="artist-bubble-count">${total} video${total === 1 ? "" : "s"}</span>
-      </div>
+      <span class="artist-block-name">${escapeHtml(artist)}</span>
+      <span class="artist-block-count">${total} video${total === 1 ? "" : "s"}</span>
     `;
 
     button.addEventListener("click", () => {
@@ -176,16 +172,10 @@ function renderArtistMap(list) {
   });
 }
 
-function getBubbleSize(total) {
-  if (total >= 6) return "xlarge";
-  if (total >= 4) return "large";
+function getArtistBlockSize(total) {
+  if (total >= 4) return "big";
   if (total >= 2) return "medium";
   return "small";
-}
-
-function getRotation(index) {
-  const rotations = [-4, -2, 0, 2, 4, -3, 3];
-  return rotations[index % rotations.length];
 }
 
 function searchVideos() {
@@ -210,8 +200,8 @@ function toggleArtistMap() {
 
   const isHidden = artistMapSection.classList.contains("hidden");
   toggleArtistMapButton.textContent = isHidden
-    ? "Show Artist Cloud"
-    : "Hide Artist Cloud";
+    ? "Show Artist Board"
+    : "Hide Artist Board";
 }
 
 function clearArtistFilter() {
