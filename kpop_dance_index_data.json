@@ -4,7 +4,7 @@
     "videoId": "plwPFhmV4nU",
     "artist": "KATSEYE",
     "songTitle": "Gabriela",
-    "performanceDate": "",
+    "performanceDate": "2026-04-29",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/plwPFhmV4nU/hqdefault.jpg",
     "outfitImage": null
@@ -14,7 +14,7 @@
     "videoId": "PASFm8bq2m8",
     "artist": "PLAVE",
     "songTitle": "BBUU!",
-    "performanceDate": "",
+    "performanceDate": "2026-03-29",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/PASFm8bq2m8/hqdefault.jpg",
     "outfitImage": null
@@ -32,8 +32,8 @@
   {
     "youtubeUrl": "https://www.youtube.com/watch?v=Ykep0nPx-es",
     "videoId": "Ykep0nPx-es",
-    "artist": null,
-    "songTitle": null,
+    "artist": "",
+    "songTitle": "",
     "performanceDate": "",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/Ykep0nPx-es/hqdefault.jpg",
@@ -64,7 +64,7 @@
     "videoId": "0gZTY_2wGAk",
     "artist": "STAYC",
     "songTitle": "I WANT IT",
-    "performanceDate": "",
+    "performanceDate": "2025-10-29",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/0gZTY_2wGAk/hqdefault.jpg",
     "outfitImage": null
@@ -74,7 +74,7 @@
     "videoId": "GWC3ln-DXUw",
     "artist": "Kep1er",
     "songTitle": "BUBBLE GUM",
-    "performanceDate": "",
+    "performanceDate": "2025-11-29",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/GWC3ln-DXUw/hqdefault.jpg",
     "outfitImage": null
@@ -83,8 +83,8 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=eDBZW78dQDo",
     "videoId": "eDBZW78dQDo",
     "artist": "KISS OF LIFE",
-    "songTitle": "Lips Hips Kiss (Team B)",
-    "performanceDate": "",
+    "songTitle": "Lips Hips Kiss",
+    "performanceDate": "2026-02-28",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/eDBZW78dQDo/hqdefault.jpg",
     "outfitImage": null
@@ -93,8 +93,8 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=Na8tVZ9jKQI",
     "videoId": "Na8tVZ9jKQI",
     "artist": "KATSEYE",
-    "songTitle": "Gnarly",
-    "performanceDate": "",
+    "songTitle": "GNARLY",
+    "performanceDate": "2025-11-29",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/Na8tVZ9jKQI/hqdefault.jpg",
     "outfitImage": null
@@ -104,7 +104,7 @@
     "videoId": "_ejiJfOHNnc",
     "artist": "FIFTY FIFTY",
     "songTitle": "Pookie",
-    "performanceDate": "",
+    "performanceDate": "2025-08-29",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/_ejiJfOHNnc/hqdefault.jpg",
     "outfitImage": null
@@ -112,8 +112,8 @@
   {
     "youtubeUrl": "https://www.youtube.com/watch?v=20ffaUKcsbc",
     "videoId": "20ffaUKcsbc",
-    "artist": null,
-    "songTitle": null,
+    "artist": "",
+    "songTitle": "",
     "performanceDate": "",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/20ffaUKcsbc/hqdefault.jpg",
@@ -144,7 +144,7 @@
     "videoId": "8Xh5oX2yyXU",
     "artist": "ILLIT",
     "songTitle": "Cherish (My Love)",
-    "performanceDate": "",
+    "performanceDate": "2025-06-29",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/8Xh5oX2yyXU/hqdefault.jpg",
     "outfitImage": null
@@ -174,7 +174,7 @@
     "videoId": "Vi5nBrRcNyU",
     "artist": "GOT7",
     "songTitle": "PYTHON",
-    "performanceDate": "",
+    "performanceDate": "2025-05-29",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/Vi5nBrRcNyU/hqdefault.jpg",
     "outfitImage": null
@@ -184,7 +184,7 @@
     "videoId": "KqtBMxOkWGQ",
     "artist": "KiiiKiii",
     "songTitle": "I DO ME",
-    "performanceDate": "",
+    "performanceDate": "2025-05-29",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/KqtBMxOkWGQ/hqdefault.jpg",
     "outfitImage": null
@@ -193,7 +193,7 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=MJVoMnwLo6s",
     "videoId": "MJVoMnwLo6s",
     "artist": "GIRL'S DAY",
-    "songTitle": null,
+    "songTitle": "Expect",
     "performanceDate": "",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/MJVoMnwLo6s/hqdefault.jpg",
@@ -203,10 +203,820 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=Skd8hfrIZgk",
     "videoId": "Skd8hfrIZgk",
     "artist": "WJSN Cosmic Girls",
-    "songTitle": "As U Wish",
+    "songTitle": "",
     "performanceDate": "",
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/Skd8hfrIZgk/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=pAzVfv-GbY8",
+    "videoId": "pAzVfv-GbY8",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/pAzVfv-GbY8/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=_WIE6HCoXl4",
+    "videoId": "_WIE6HCoXl4",
+    "artist": "FIFTY FIFTY",
+    "songTitle": "SOS",
+    "performanceDate": "2025-05-29",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/_WIE6HCoXl4/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=VjYGfUqefLg",
+    "videoId": "VjYGfUqefLg",
+    "artist": "PiXXiE",
+    "songTitle": "DEJAYOU",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/VjYGfUqefLg/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=3vdR0cgKziI",
+    "videoId": "3vdR0cgKziI",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/3vdR0cgKziI/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=uzaGNaej_tM",
+    "videoId": "uzaGNaej_tM",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/uzaGNaej_tM/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=12HODgGyYKw",
+    "videoId": "12HODgGyYKw",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/12HODgGyYKw/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=V1Dg6VPgqWA",
+    "videoId": "V1Dg6VPgqWA",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/V1Dg6VPgqWA/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=9krdAgYqnWM",
+    "videoId": "9krdAgYqnWM",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/9krdAgYqnWM/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=A2EZ5OK3bOo",
+    "videoId": "A2EZ5OK3bOo",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/A2EZ5OK3bOo/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=V1C39F7r-bM",
+    "videoId": "V1C39F7r-bM",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/V1C39F7r-bM/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=vKfwK-Hjk6U",
+    "videoId": "vKfwK-Hjk6U",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/vKfwK-Hjk6U/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=bhkiatWyDxs",
+    "videoId": "bhkiatWyDxs",
+    "artist": "SUNMI",
+    "songTitle": "Stranger",
+    "performanceDate": "2024-05-29",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/bhkiatWyDxs/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=cdv3b8PJICA",
+    "videoId": "cdv3b8PJICA",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/cdv3b8PJICA/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=ZyCIAeoKJ7Q",
+    "videoId": "ZyCIAeoKJ7Q",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/ZyCIAeoKJ7Q/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=3S1zCcUvNDE",
+    "videoId": "3S1zCcUvNDE",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/3S1zCcUvNDE/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=u87nPEdo_U4",
+    "videoId": "u87nPEdo_U4",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/u87nPEdo_U4/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=5PbuKsXl1Jk",
+    "videoId": "5PbuKsXl1Jk",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/5PbuKsXl1Jk/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=EtGP5EX1DuI",
+    "videoId": "EtGP5EX1DuI",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/EtGP5EX1DuI/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=R3rSqnHd7ZQ",
+    "videoId": "R3rSqnHd7ZQ",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/R3rSqnHd7ZQ/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=4BpRfQqC2zI",
+    "videoId": "4BpRfQqC2zI",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/4BpRfQqC2zI/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=Xopj38_Wz5U",
+    "videoId": "Xopj38_Wz5U",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/Xopj38_Wz5U/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=-o9Z4WWl1Ds",
+    "videoId": "-o9Z4WWl1Ds",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/-o9Z4WWl1Ds/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=Hyf1sgMguWM",
+    "videoId": "Hyf1sgMguWM",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/Hyf1sgMguWM/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=ZnrOJ9I9-Uc",
+    "videoId": "ZnrOJ9I9-Uc",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/ZnrOJ9I9-Uc/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=6eL50eHVb1I",
+    "videoId": "6eL50eHVb1I",
+    "artist": "IVE",
+    "songTitle": "Baddie",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/6eL50eHVb1I/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=5UZ4nFTI9N8",
+    "videoId": "5UZ4nFTI9N8",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/5UZ4nFTI9N8/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=wv1_2FJHQ6A",
+    "videoId": "wv1_2FJHQ6A",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/wv1_2FJHQ6A/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=UcBoZshxYEI",
+    "videoId": "UcBoZshxYEI",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/UcBoZshxYEI/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=xY4JJjBnBcg",
+    "videoId": "xY4JJjBnBcg",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/xY4JJjBnBcg/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=M_Iiv_Vtjj8",
+    "videoId": "M_Iiv_Vtjj8",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/M_Iiv_Vtjj8/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=QVUvYsLAf0E",
+    "videoId": "QVUvYsLAf0E",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/QVUvYsLAf0E/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=Gc5O9IEWPTQ",
+    "videoId": "Gc5O9IEWPTQ",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/Gc5O9IEWPTQ/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=OAMioDJu-4k",
+    "videoId": "OAMioDJu-4k",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/OAMioDJu-4k/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=gYZt-XCy3no",
+    "videoId": "gYZt-XCy3no",
+    "artist": "Dinah Jane",
+    "songTitle": "Heard It All Before",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/gYZt-XCy3no/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=RSRw67baQTw",
+    "videoId": "RSRw67baQTw",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/RSRw67baQTw/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=UH2wJrM5ZOM",
+    "videoId": "UH2wJrM5ZOM",
+    "artist": "STAYC",
+    "songTitle": "POPPY",
+    "performanceDate": "2023-05-29",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/UH2wJrM5ZOM/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=Ws9woZdKU3w",
+    "videoId": "Ws9woZdKU3w",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/Ws9woZdKU3w/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=WXaIhpupf1M",
+    "videoId": "WXaIhpupf1M",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/WXaIhpupf1M/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=KNWqQba5hCg",
+    "videoId": "KNWqQba5hCg",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/KNWqQba5hCg/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=LRvitKnZQ7k",
+    "videoId": "LRvitKnZQ7k",
+    "artist": "Kep1er",
+    "songTitle": "Up!",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/LRvitKnZQ7k/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=4w9voT5Qzbs",
+    "videoId": "4w9voT5Qzbs",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/4w9voT5Qzbs/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=tZyoG8ZrYao",
+    "videoId": "tZyoG8ZrYao",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/tZyoG8ZrYao/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=neKGJte7rA4",
+    "videoId": "neKGJte7rA4",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/neKGJte7rA4/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=64qUoBtjRKc",
+    "videoId": "64qUoBtjRKc",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/64qUoBtjRKc/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=E5aBVuhaRNU",
+    "videoId": "E5aBVuhaRNU",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/E5aBVuhaRNU/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=QoKsF_Om0PI",
+    "videoId": "QoKsF_Om0PI",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/QoKsF_Om0PI/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=WkhCQrFkL88",
+    "videoId": "WkhCQrFkL88",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/WkhCQrFkL88/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=CnzYl6AS0rM",
+    "videoId": "CnzYl6AS0rM",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/CnzYl6AS0rM/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=R60wUYJY3ks",
+    "videoId": "R60wUYJY3ks",
+    "artist": "Kep1er",
+    "songTitle": "WA DA DA",
+    "performanceDate": "2022-05-29",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/R60wUYJY3ks/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=5kPJF1F5vNs",
+    "videoId": "5kPJF1F5vNs",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/5kPJF1F5vNs/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=47QwwjWwQtA",
+    "videoId": "47QwwjWwQtA",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/47QwwjWwQtA/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=kjNImYxdHAg",
+    "videoId": "kjNImYxdHAg",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/kjNImYxdHAg/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=MhJ_sxRApGc",
+    "videoId": "MhJ_sxRApGc",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/MhJ_sxRApGc/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=iCwOGfvg1GI",
+    "videoId": "iCwOGfvg1GI",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/iCwOGfvg1GI/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=99wR_9hYpz8",
+    "videoId": "99wR_9hYpz8",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/99wR_9hYpz8/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=XsPCiQXJ0K4",
+    "videoId": "XsPCiQXJ0K4",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/XsPCiQXJ0K4/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=Ffg9Mu2_qgU",
+    "videoId": "Ffg9Mu2_qgU",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/Ffg9Mu2_qgU/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=1LHv83ZA6JY",
+    "videoId": "1LHv83ZA6JY",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/1LHv83ZA6JY/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=voa56haXaQU",
+    "videoId": "voa56haXaQU",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/voa56haXaQU/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=uD71yDsXe-w",
+    "videoId": "uD71yDsXe-w",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/uD71yDsXe-w/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=FAlXDHgzNOo",
+    "videoId": "FAlXDHgzNOo",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/FAlXDHgzNOo/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=9esjTakEAgs",
+    "videoId": "9esjTakEAgs",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/9esjTakEAgs/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=VWSHYhfGhr8",
+    "videoId": "VWSHYhfGhr8",
+    "artist": "Purple Kiss",
+    "songTitle": "PONZONA",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/VWSHYhfGhr8/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=BQCdUopsndk",
+    "videoId": "BQCdUopsndk",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/BQCdUopsndk/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=rMDL5jg_SXs",
+    "videoId": "rMDL5jg_SXs",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/rMDL5jg_SXs/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=grvJyfiphkU",
+    "videoId": "grvJyfiphkU",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/grvJyfiphkU/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=zX4gnznxRew",
+    "videoId": "zX4gnznxRew",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/zX4gnznxRew/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=2p7D7T71d-8",
+    "videoId": "2p7D7T71d-8",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/2p7D7T71d-8/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=q2IM2YVC5xo",
+    "videoId": "q2IM2YVC5xo",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/q2IM2YVC5xo/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=HDyjaPj65mQ",
+    "videoId": "HDyjaPj65mQ",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/HDyjaPj65mQ/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=EJ-B3Bsuntw",
+    "videoId": "EJ-B3Bsuntw",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/EJ-B3Bsuntw/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=DZz7H59q4Sw",
+    "videoId": "DZz7H59q4Sw",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/DZz7H59q4Sw/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=105w6_W3zfk",
+    "videoId": "105w6_W3zfk",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/105w6_W3zfk/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=qNTq36JD6sw",
+    "videoId": "qNTq36JD6sw",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/qNTq36JD6sw/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=wbe6zkIDvHs",
+    "videoId": "wbe6zkIDvHs",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/wbe6zkIDvHs/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=8YdVMhhnIb0",
+    "videoId": "8YdVMhhnIb0",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/8YdVMhhnIb0/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=nQ8m1sbapNo",
+    "videoId": "nQ8m1sbapNo",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/nQ8m1sbapNo/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=zCxLdys2eS8",
+    "videoId": "zCxLdys2eS8",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/zCxLdys2eS8/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=28NOrZowum0",
+    "videoId": "28NOrZowum0",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/28NOrZowum0/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=7dsKGw5lxrA",
+    "videoId": "7dsKGw5lxrA",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/7dsKGw5lxrA/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=IV45juAXdss",
+    "videoId": "IV45juAXdss",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/IV45juAXdss/hqdefault.jpg",
     "outfitImage": null
   }
 ]
