@@ -31,6 +31,7 @@ async function loadData() {
 function sortByNewestDate(a, b) {
   const dateA = a.performanceDate || "0000-00";
   const dateB = b.performanceDate || "0000-00";
+
   return dateB.localeCompare(dateA);
 }
 
@@ -146,6 +147,7 @@ function toggleArtistMap() {
   artistMapSection.classList.toggle("hidden");
 
   const isHidden = artistMapSection.classList.contains("hidden");
+
   toggleArtistMapButton.textContent = isHidden
     ? "Show Artist Board"
     : "Hide Artist Board";
