@@ -15,7 +15,7 @@ const PAGE_SIZE = 24;
 
 async function loadData() {
   try {
-    const response = await fetch("./kpop_dance_index_data.json");
+    const response = await fetch("https://script.google.com/macros/s/AKfycbwlpl1_Ndpznng_BhgnDSxzaZezfJpfBGcm34lSeH9ik_yDsKVfv0taBfNWwv1lKPeK/exec");
 
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
