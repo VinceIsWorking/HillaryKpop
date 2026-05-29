@@ -1248,5 +1248,35 @@
     "location": "",
     "thumbnail": "https://img.youtube.com/vi/57KySWWitP8/hqdefault.jpg",
     "outfitImage": null
-  }
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=a-LnBBAIpwY",
+    "videoId": "a-LnBBAIpwY",
+    "artist": "TWICE",
+    "songTitle": "What is Love?",
+    "performanceDate": "2018-06",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/a-LnBBAIpwY/hqdefault.jpg",
+    "outfitImage": null
+  },
+  {
+    "youtubeUrl": "https://www.youtube.com/watch?v=0GRlQvFYDQc",
+    "videoId": "0GRlQvFYDQc",
+    "artist": "(G)I-DLE",
+    "songTitle": "Latata",
+    "performanceDate": "2018-07",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/0GRlQvFYDQc/hqdefault.jpg",
+    "outfitImage": null
+  },
+    {
+    "youtubeUrl": "https://www.youtube.com/watch?v=QcVIPo7PNUo",
+    "videoId": "QcVIPo7PNUo",
+    "artist": "",
+    "songTitle": "",
+    "performanceDate": "2018-04",
+    "location": "",
+    "thumbnail": "https://img.youtube.com/vi/QcVIPo7PNUo/hqdefault.jpg",
+    "outfitImage": null
+    }  
 ]
