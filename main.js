@@ -130,10 +130,11 @@ function renderVideos(list) {
             <div class="artist">${escapeHtml(artist)}</div>
             <h2 class="song">${escapeHtml(songTitle)}</h2>
 
-            <div class="meta">
-              <div>${escapeHtml(location)}</div>
-              <div>${escapeHtml(date)}</div>
-            </div>
+          <div class="meta">
+            <div>${escapeHtml(location)}</div>
+            <div>${escapeHtml(date)}</div>
+            ${dancerRole ? `<div class="role">Hillary as ${escapeHtml(dancerRole)}</div>` : ""}
+          </div>
 
             <a 
               class="watch" 
