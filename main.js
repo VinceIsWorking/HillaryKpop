@@ -133,7 +133,7 @@ function renderVideos(list) {
           <div class="meta">
             <div>${escapeHtml(location)}</div>
             <div>${escapeHtml(date)}</div>
-            ${dancerRole ? `<div class="role">Hillary as ${escapeHtml(dancerRole)}</div>` : ""}
+            ${dancerRole ? `<div class="role">as ${escapeHtml(dancerRole)}</div>` : ""}
           </div>
 
             <a 
