@@ -116,6 +116,7 @@ function renderVideos(list) {
       const songTitle = item.songTitle || "Unknown Song";
       const location = item.location || "Location unknown";
       const date = item.performanceDate || "Date unknown";
+      const dancerRole = item.dancerRole || "";
 
       return `
         <article class="card">
